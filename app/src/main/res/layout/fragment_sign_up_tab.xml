@@ -1,0 +1,111 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_marginTop="20dp"
+    tools:context="com.maslianah.my.androidquiz.signUpTab">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="282dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="282dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/email"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/fName"
+        android:layout_width="282dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/password"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/first_name"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/lName"
+        android:layout_width="282dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/fName"
+        android:layout_below="@+id/fName"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="@string/last_name"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="282dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/lName"
+        android:layout_below="@+id/lName"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="@string/mobile_number"
+        android:inputType="textPhonetic"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/userType"
+        android:layout_width="282dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/mobile"
+        android:layout_below="@+id/mobile"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:ems="10"
+        android:paddingLeft="20dp"
+        android:paddingRight="48dp"
+        android:spinnerMode="dropdown"
+        android:textSize="14sp"
+        android:entries="@array/user_Type"
+       />
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="282dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/userType"
+        android:layout_below="@+id/userType"
+        android:layout_marginTop="15dp"
+        android:background="@color/FireBrick"
+        android:gravity="center"
+        android:text="@string/Sign_Up"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+
+        />
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maslianah.my.androidquiz.MainScreen"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/Name"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/mobile_number"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/Black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/editNumber"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/number"
+        android:layout_marginEnd="33dp"
+        android:ems="10"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/edit"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@color/FireBrick"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/userType"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/number"
+        android:layout_below="@+id/number"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/userType"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@color/FireBrick"/>
+
+    <Button
+        android:id="@+id/logOut"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_alignEnd="@+id/editNumber"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        android:background="@color/FireBrick"
+        android:ems="10"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/logOut"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+</RelativeLayout>
